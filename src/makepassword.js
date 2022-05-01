@@ -1,13 +1,26 @@
 'use strict'
 const fs = require('fs');
-const {readFile, writeFile, hash} = require('./utility')
+const {readFile, writeFile, hash} = require('./utility');
 
+
+/**
+ * main function
+ */
+function passwordMaker() {
+
+}
+
+/**
+ * sub function
+ * @param passwordFileName
+ * @param passwordEncFileName
+ */
 function makepassword(passwordFileName, passwordEncFileName) {
    // ???
 }
 
 if (require.main === module) {
-    makepassword('./password.txt', './password.enc.txt')
+    passwordMaker();
 }
 
-module.exports = { /*makepassword*/ };
+module.exports = { makepassword };
