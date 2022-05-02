@@ -51,6 +51,7 @@ Creates the encrypted `password.enc.txt` out of `password.txt`
 - `fileChecker(fileName)`
   - verifies that the `Name` contains the txt extension
   - `boolean` return
+  - not tested because it is only one line, which is a basic string function
 - `processor(string)`
   - splits input string into email and password
   - hashes password
@@ -62,9 +63,6 @@ Creates the encrypted `password.enc.txt` out of `password.txt`
   - checks if file exists
   - check if contents are correct
     - read original file, hash it with `utility.js`, compare output
-- `fileChecker()`
-  - input multiple strings with periods, txt, .txt in the wrong place 
-  and a properly formatted filepath
 - `processor()`
   - input multiple different strings, compare with correctly hashed versions
   - input incorrectly formatted strings (multiple :'s, no :, etc)
@@ -98,8 +96,6 @@ Checks if an input username/password exists in a file
 - in main, convert the boolean value into a string, return the string
 ## Behaviors
 - only main `passwordjs()` and sub `verifyUser(fileName, email, password)` function
-- sub may be unit tested time permitting, though it should be handled by acceptance test
 ## Testing
 - of main is handled by `acceptance.bat`
-  - runs each 
-- of any others is handled by `passwordjs.test.js`
+  - runs with various inputs
