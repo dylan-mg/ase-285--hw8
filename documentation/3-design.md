@@ -66,6 +66,9 @@ Creates the encrypted `password.enc.txt` out of `password.txt`
 - `processor()`
   - input multiple different strings, compare with correctly hashed versions
   - input incorrectly formatted strings (multiple :'s, no :, etc)
+### `mpwAcc.bat`
+- Acceptance test for makePassword.js as an application
+- tests multiple inputs, both valid and invalid
 ---
 # `passwordjs`
 ## Overview
